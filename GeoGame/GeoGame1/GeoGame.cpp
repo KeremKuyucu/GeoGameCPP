@@ -25,7 +25,7 @@ void download(const string& url, const string& filename, const bool& kesinlik, c
 }
 bool checkVersions() {
 	if (!versionControl)
-		download("https://drive.usercontent.google.com/download?id=1KIYUZBqnagJmmD0WcfIYdVFjlb3ExyVM", "dosyalar\\remoteVersion.txt", 1, 0);
+		download("https://raw.githubusercontent.com/keremlolgg/GeoGameCPP/refs/heads/main/cografyaoyun/dosyalar/remoteVersion.txt", "dosyalar\\remoteVersion.txt", 1, 0);
 	std::ifstream file1("C:\\Users\\Public\\Documents\\cografyaoyun\\dosyalar\\remoteVersion.txt"); getline(file1, remoteVersion); 	file1.close();
 	std::ifstream file2("C:\\Users\\Public\\Documents\\cografyaoyun\\dosyalar\\localVersion.txt"); 	getline(file2, localVersion); 	file2.close();
 	versionControl = true;
@@ -94,7 +94,7 @@ vector<FileData> files = {
 {"https://flagcdn.com/w320/tk.png","dosyalar\\bayraklar\\tokelau.png",0,1418},
 {"https://flagcdn.com/w320/nc.png","dosyalar\\bayraklar\\yenikaledonya.png",0,1715},
 {"https://flagcdn.com/w320/bb.png","dosyalar\\bayraklar\\barbados.png",0,998},
-{"https://flagcdn.com/w320/st.png","dosyalar\\bayraklar\\s“otom⁄veprˇncipe.png",0,1077},
+{"https://flagcdn.com/w320/st.png","dosyalar\\bayraklar\\s√íotom√övepr√øncipe.png",0,1077},
 {"https://flagcdn.com/w320/aq.png","dosyalar\\bayraklar\\antarktika.png",0,1354},
 {"https://flagcdn.com/w320/bn.png","dosyalar\\bayraklar\\brunei.png",0,3402},
 {"https://flagcdn.com/w320/bt.png","dosyalar\\bayraklar\\butan.png",0,8230},
@@ -109,7 +109,7 @@ vector<FileData> files = {
 {"https://flagcdn.com/w320/cz.png","dosyalar\\bayraklar\\cekya.png",0,940},
 {"https://flagcdn.com/w320/gi.png","dosyalar\\bayraklar\\cebelitarik.png",0,2033},
 {"https://flagcdn.com/w320/aw.png","dosyalar\\bayraklar\\aruba.png",0,735},
-{"https://flagcdn.com/w320/bl.png","dosyalar\\bayraklar\\saintbarth⁄lemy.png",0,11667},
+{"https://flagcdn.com/w320/bl.png","dosyalar\\bayraklar\\saintbarth√ölemy.png",0,11667},
 {"https://flagcdn.com/w320/mc.png","dosyalar\\bayraklar\\monako.png",0,124},
 {"https://flagcdn.com/w320/ae.png","dosyalar\\bayraklar\\birlesikarapemirlikleri.png",0,233},
 {"https://flagcdn.com/w320/ss.png","dosyalar\\bayraklar\\guneysudan.png",0,1000},
@@ -282,27 +282,27 @@ vector<FileData> files = {
 {"https://flagcdn.com/w320/do.png","dosyalar\\bayraklar\\dominikcumhuriyeti.png",0,1658},
 {"https://flagcdn.com/w320/qa.png","dosyalar\\bayraklar\\katar.png",0,336},
 {"https://flagcdn.com/w320/ga.png","dosyalar\\bayraklar\\gabon.png",0,161},
-{"https://drive.usercontent.google.com/download?id=1RDknWZSI6vPpCqL5NvCPohnWTG9T2_mW","dosyalar\\arkaplan.png",0,66286},
-{"https://drive.usercontent.google.com/download?id=16DYML8f6jIX88uZQF5UGiLY_5O9eMGEn","sfml-system-2.dll",0,50688},
-{"https://drive.usercontent.google.com/download?id=1hDwHMDT-14bzF4UniaAbRjKUZiUHqRGk","sfml-audio-2.dll",0,1187328},
-{"https://drive.usercontent.google.com/download?id=1pyVmFrCe5QlOB3Ktz1o9L9Jl6sBp0ztg","sfml-graphics-2.dll",0,891392},
-{"https://drive.usercontent.google.com/download?id=1TMA95gUORx1wyQ9ICEEqpsbXlSKXcAbh","sfml-network-2.dll",0,127488},
-{"https://drive.usercontent.google.com/download?id=1AVViTcSqf0kS80CS8eIrSCi3IAmef39q","sfml-window-2.dll",0,144384},
-{"https://drive.usercontent.google.com/download?id=1mwS7IGKDaHLGD3i0SVXKJqcDkRnygf1U","openal32.dll",0,669696},
-{"https://drive.usercontent.google.com/download?id=14QeyRRW8J2sZvGFQMmyY-Gjj6qavEa3J","dosyalar\\sesler\\dogru.ogg",0,7703},
-{"https://drive.usercontent.google.com/download?id=1lfBSgz9ja7oSyLb3XQBbbMLDm_vzchRg","dosyalar\\sesler\\yanlis.ogg",0,10769},
-{"https://drive.usercontent.google.com/download?id=1M4JCY_AFmVbnWNn24Zbnq5rIfd3zR3zZ","dosyalar\\sesler\\yenitur.ogg",0,23217},
-{"https://drive.usercontent.google.com/download?id=1dq1MNEWyxkRsLug0v3qsb4lGPNHU_yir","dosyalar\\sesler\\arkafon.ogg",0,1396954},
-{"https://drive.usercontent.google.com/download?id=1uJAWWTlFir4tJ4sZ5EPzmG8Snd2A-7bf","dosyalar\\arial.ttf",0,915212},
-{"https://drive.usercontent.google.com/download?id=1WmFuztUD3X80v5NpfWgrSSaCeCocdO7Q&export=download&authuser=0&confirm=t&uuid=1b16f9d7-8646-489c-8f6e-8f9d3a15f8e7&at=APZUnTUh4dGfn-w_lh_Kv2WGo21B:1715106720830", "CografyaOyun.exe", checkVersions(), 0 },
-{"https://drive.usercontent.google.com/download?id=1KIYUZBqnagJmmD0WcfIYdVFjlb3ExyVM", "dosyalar\\localVersion.txt", checkVersions(), 0 }
+{"https://raw.githubusercontent.com/keremlolgg/GeoGameCPP/refs/heads/main/cografyaoyun/dosyalar/arkaplan.png","dosyalar\\arkaplan.png",0,66286},
+{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/sfml-system-2.dll","sfml-system-2.dll",0,50688},
+{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/sfml-audio-2.dll","sfml-audio-2.dll",0,1187328},
+{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/sfml-graphics-2.dll","sfml-graphics-2.dll",0,891392},
+{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/sfml-network-2.dll","sfml-network-2.dll",0,127488},
+{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/sfml-window-2.dll","sfml-window-2.dll",0,144384},
+{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/openal32.dll","openal32.dll",0,669696},
+{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/dosyalar/sesler/dogru.ogg","dosyalar\\sesler\\dogru.ogg",0,7703},
+{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/dosyalar/sesler/yanlis.ogg","dosyalar\\sesler\\yanlis.ogg",0,10769},
+{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/dosyalar/sesler/yenitur.ogg","dosyalar\\sesler\\yenitur.ogg",0,23217},
+{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/dosyalar/sesler/arkafon.ogg","dosyalar\\sesler\\arkafon.ogg",0,1396954},
+{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/dosyalar/arial.ttf","dosyalar\\arial.ttf",0,915212},
+{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/CografyaOyun.exe", "CografyaOyun.exe", checkVersions(), 0 },
+{"https://raw.githubusercontent.com/keremlolgg/GeoGameCPP/refs/heads/main/cografyaoyun/dosyalar/remoteVersion.txt", "dosyalar\\localVersion.txt", checkVersions(), 0 }
 };
 int main(void) {
 	setlocale(LC_ALL, "Turkish");
 	current_path("C:\\Users\\Public\\Documents\\cografyaoyun");
 	path applicationPath = "CografyaOyun.exe";
 	do {
-		cerr << "\033[1;31mDosyalar Dorulan˝yor Eksikler ›ndiriliyor..." << std::endl;
+		cerr << "\033[1;31mDosyalar Doƒürulanƒ±yor Eksikler ƒ∞ndiriliyor..." << std::endl;
 		for (const auto& data : files)
 			futures.emplace_back(std::async(std::launch::async, download, data.url, data.fileName, (kerem == true && data.dosyaboyut == 0) ? true : data.kesinlik, data.dosyaboyut));
 		for (auto& future : futures)
@@ -310,11 +310,11 @@ int main(void) {
 		result = system(applicationPath.string().c_str());
 		if (result) {
 			kerem = true;
-			cerr << "\033[1;33mUygulama aÁ˝lamad˝. 3 Saniye Sonra Tekrar denenecek.\nEer tekrar hala aÁ˝lm˝yor ise\n\033[1;34mC:\\Users\\Ortak\\Documents\\cografyaoyun \033[1;33mkonunuma giderek oyunu CografyaOyun.exe dosyas˝n˝ aÁarak ba˛latabilirsiniz\033[1;31m" << endl;
+			cerr << "\033[1;33mUygulama a√ßƒ±lamadƒ±. 3 Saniye Sonra Tekrar denenecek.\nEƒüer hala a√ßƒ±lmƒ±yor ise\n\033[1;34mC:\\Users\\Ortak\\Documents\\cografyaoyun \033[1;33mkonunuma giderek oyunu CografyaOyun.exe dosyasƒ±nƒ± a√ßarak ba≈ülatabilirsiniz.\033[1;31m" << endl;
 			Sleep(3000); // 3 saniye bekleme
 		}
 		futures.clear();
 	} while (result);
-	cout << "\033[1;34mBa˛ar˝yla AÁ˝ld˝!\033[0m" << endl;
+	cout << "\033[1;34mBa≈üarƒ±yla A√ßƒ±ldƒ±!\033[0m" << endl;
 	return 0;
 }
