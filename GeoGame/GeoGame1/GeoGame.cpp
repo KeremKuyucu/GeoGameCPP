@@ -16,7 +16,7 @@ struct FileData {
 	int dosyaboyut;
 };
 void download(const string& url, const string& filename, const bool& kesinlik, const int& dosyaboyut) {
-	string file = "C:\\Users\\Public\\Documents\\cografyaoyun\\" + filename;
+	string file = "C:\\Users\\Public\\Documents\\geogame\\" + filename;
 	create_directories(path(file).parent_path());
 	if (kesinlik || (!exists(file)) || (dosyaboyut != 0 && dosyaboyut != file_size(file))) {
 		int systemResult = system(("powershell -Command \"Invoke-WebRequest -Uri '" + url + "' -OutFile '" + file + "'\"").c_str());
@@ -25,9 +25,9 @@ void download(const string& url, const string& filename, const bool& kesinlik, c
 }
 bool checkVersions() {
 	if (!versionControl)
-		download("https://raw.githubusercontent.com/keremlolgg/GeoGameCPP/refs/heads/main/cografyaoyun/dosyalar/remoteVersion.txt", "dosyalar\\remoteVersion.txt", 1, 0);
-	std::ifstream file1("C:\\Users\\Public\\Documents\\cografyaoyun\\dosyalar\\remoteVersion.txt"); getline(file1, remoteVersion); 	file1.close();
-	std::ifstream file2("C:\\Users\\Public\\Documents\\cografyaoyun\\dosyalar\\localVersion.txt"); 	getline(file2, localVersion); 	file2.close();
+		download("https://raw.githubusercontent.com/keremlolgg/GeoGameCPP/refs/heads/main/ProgramFiles/dosyalar/remoteVersion.txt", "dosyalar\\remoteVersion.txt", 1, 0);
+	std::ifstream file1("C:\\Users\\Public\\Documents\\geogame\\dosyalar\\remoteVersion.txt"); getline(file1, remoteVersion); 	file1.close();
+	std::ifstream file2("C:\\Users\\Public\\Documents\\geogame\\dosyalar\\localVersion.txt"); 	getline(file2, localVersion); 	file2.close();
 	versionControl = true;
 	return remoteVersion != localVersion;
 }
@@ -282,24 +282,24 @@ vector<FileData> files = {
 {"https://flagcdn.com/w320/do.png","dosyalar\\bayraklar\\dominikcumhuriyeti.png",0,1658},
 {"https://flagcdn.com/w320/qa.png","dosyalar\\bayraklar\\katar.png",0,336},
 {"https://flagcdn.com/w320/ga.png","dosyalar\\bayraklar\\gabon.png",0,161},
-{"https://raw.githubusercontent.com/keremlolgg/GeoGameCPP/refs/heads/main/cografyaoyun/dosyalar/arkaplan.png","dosyalar\\arkaplan.png",0,66286},
-{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/sfml-system-2.dll","sfml-system-2.dll",0,50688},
-{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/sfml-audio-2.dll","sfml-audio-2.dll",0,1187328},
-{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/sfml-graphics-2.dll","sfml-graphics-2.dll",0,891392},
-{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/sfml-network-2.dll","sfml-network-2.dll",0,127488},
-{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/sfml-window-2.dll","sfml-window-2.dll",0,144384},
-{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/openal32.dll","openal32.dll",0,669696},
-{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/dosyalar/sesler/dogru.ogg","dosyalar\\sesler\\dogru.ogg",0,7703},
-{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/dosyalar/sesler/yanlis.ogg","dosyalar\\sesler\\yanlis.ogg",0,10769},
-{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/dosyalar/sesler/yenitur.ogg","dosyalar\\sesler\\yenitur.ogg",0,23217},
-{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/dosyalar/sesler/arkafon.ogg","dosyalar\\sesler\\arkafon.ogg",0,1396954},
-{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/dosyalar/arial.ttf","dosyalar\\arial.ttf",0,915212},
-{"https://github.com/keremlolgg/GeoGameCPP/raw/refs/heads/main/cografyaoyun/CografyaOyun.exe", "CografyaOyun.exe", checkVersions(), 0 },
-{"https://raw.githubusercontent.com/keremlolgg/GeoGameCPP/refs/heads/main/cografyaoyun/dosyalar/remoteVersion.txt", "dosyalar\\localVersion.txt", checkVersions(), 0 }
+{"https://raw.githubusercontent.com/keremkuyucu/GeoGameCPP/refs/heads/main/ProgramFiles/dosyalar/arkaplan.png","dosyalar\\arkaplan.png",0,66286},
+{"https://github.com/keremkuyucu/GeoGameCPP/raw/refs/heads/main/ProgramFiles/sfml-system-2.dll","sfml-system-2.dll",0,50688},
+{"https://github.com/keremkuyucu/GeoGameCPP/raw/refs/heads/main/ProgramFiles/sfml-audio-2.dll","sfml-audio-2.dll",0,1187328},
+{"https://github.com/keremkuyucu/GeoGameCPP/raw/refs/heads/main/ProgramFiles/sfml-graphics-2.dll","sfml-graphics-2.dll",0,891392},
+{"https://github.com/keremkuyucu/GeoGameCPP/raw/refs/heads/main/ProgramFiles/sfml-network-2.dll","sfml-network-2.dll",0,127488},
+{"https://github.com/keremkuyucu/GeoGameCPP/raw/refs/heads/main/ProgramFiles/sfml-window-2.dll","sfml-window-2.dll",0,144384},
+{"https://github.com/keremkuyucu/GeoGameCPP/raw/refs/heads/main/ProgramFiles/openal32.dll","openal32.dll",0,669696},
+{"https://github.com/keremkuyucu/GeoGameCPP/raw/refs/heads/main/ProgramFiles/dosyalar/sesler/dogru.ogg","dosyalar\\sesler\\dogru.ogg",0,7703},
+{"https://github.com/keremkuyucu/GeoGameCPP/raw/refs/heads/main/ProgramFiles/dosyalar/sesler/yanlis.ogg","dosyalar\\sesler\\yanlis.ogg",0,10769},
+{"https://github.com/keremkuyucu/GeoGameCPP/raw/refs/heads/main/ProgramFiles/dosyalar/sesler/yenitur.ogg","dosyalar\\sesler\\yenitur.ogg",0,23217},
+{"https://github.com/keremkuyucu/GeoGameCPP/raw/refs/heads/main/ProgramFiles/dosyalar/sesler/arkafon.ogg","dosyalar\\sesler\\arkafon.ogg",0,1396954},
+{"https://github.com/keremkuyucu/GeoGameCPP/raw/refs/heads/main/ProgramFiles/dosyalar/arial.ttf","dosyalar\\arial.ttf",0,915212},
+{"https://github.com/keremkuyucu/GeoGameCPP/raw/refs/heads/main/ProgramFiles/CografyaOyun.exe", "CografyaOyun.exe", checkVersions(), 0 },
+{"https://raw.githubusercontent.com/keremkuyucu/GeoGameCPP/refs/heads/main/ProgramFiles/dosyalar/remoteVersion.txt", "dosyalar\\localVersion.txt", checkVersions(), 0 }
 };
 int main(void) {
 	setlocale(LC_ALL, "Turkish");
-	current_path("C:\\Users\\Public\\Documents\\cografyaoyun");
+	current_path("C:\\Users\\Public\\Documents\\geogame");
 	path applicationPath = "CografyaOyun.exe";
 	do {
 		cerr << "\033[1;31mDosyalar Doğrulanıyor Eksikler İndiriliyor..." << std::endl;
