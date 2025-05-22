@@ -1,0 +1,12 @@
+obj/
+.vs/
+.obj/
+public/
+.public/
+/public/
+*.vsidx
+*.db
+*.pdb
+*.ipch
+/.vs/
+*.vscode
